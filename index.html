@@ -3,71 +3,44 @@
     <head>
         <meta charset="utf-8"> <!--Type of unicode used by all the websites(convert computer language to human)-->
         <meta name="viewport" contet="width=devide-width, initial-scale=1"> <!--Width enable that the website can display properly in all devices(computers, tablets, phones) and initial scale set the zoom of the website-->
-        <link rel="stylesheet" href="./css/index.css">
-        <title>Everyone's Site</title>
-        
+        <link rel="stylesheet" href="./css/login.css">
+        <title>BlueBird</title>
     </head>
+    
+    
     <header>
         <nav id="nav_navigationWrapper">
             <div id="div_navigationbar">
-                <a  id="a_homeImage" href="index.html"><img class="img_home" src="media/home.png" alt="Home Navigation Bar Image"></a>
-                <a id="a_bluebird" href="./bluebirdLogin.html">BlueBird</a>
+                <a href="index.html"><img class="img_home" src="media/home.png" alt="Home Navigation Bar Image"></a>
             </div>
         </nav>
     </header>
 
     <body>
-        <div id="videos">
-            <h2>Videos</h2>
-            <nav>
-                <ul>
-                    <li><a href="https://youtu.be/ypnxAZTP6ho" target="_blank"><em>Secreto</em></a></li>
-                    <li><a href="media/everyone mains.mp4" target="_blank"><em>Everyone Mains</em></a></li>
-                    <li><a href="https://drive.google.com/file/d/18w_DKvdcmHL00BzI2vD4IwL2mG729yWQ/view?usp=sharing" target="_blank"><em>Everyone</em></a></li>
-                </ul>
-            </nav>
-        </div>
+        <form class="form_loginWrapper" action="./bluebirdHome.html" method="POST">
+            <h1>Login</h1>
+       
+            <section class="sec_input-box">
+                <input type="text" pattern="[a-zA-Z]{4,15}" placeholder="Nome" required> <!--Name without numbers or especial characters and range between 4 to 15 characters-->
+            </section>
+         
+            <section class="sec_input-box">
+                <input type="password" minlength="8" maxlength="15" placeholder="Senha" required> <!--Password range: 8-15-->
+            </section>  
+            <section class="sec_remember-me">
+                <label><input type="checkbox"> Lembre-se de mim</label>
+                <a class="a_link" href="./bluebirdPasswordForgot.html">Esqueceu a senha?</a>
+            </section>
+     
+            <section class="sec_submitButton">
+                <input type="submit" value="Enviar">
+            </section>
 
-        <div id="lore">
-            <h2>Characters Lore</h2>
-            <table>
-             <th><a href="./tuts.html"><img src="media/tuts.png" width="320" height="240" /></a></th>
-             <th>texto</th>
-            </table>
-            <img class="image" src="media/mateus.png" width="320" height="240" alt="Cartaz meme procurado One Piece Mateus" />
-            <img class="image" src="media/tuco.png" width="320" height="240" alt="Cartaz meme procurado One Piece Tuco" />
-            <img class="image" src="media/jota.png" width="320" height="240" alt="Cartaz meme procurado One Piece Jota" />
-            <img class="image" src="media/henrique.png" width="320" height="240" alt="Cartaz meme procurado One Piece Henrique" />
-            <img class="image" src="media/marcio.png" width="320" height="240" alt="Cartaz meme procurado One Piece Marcio" />
-            <!--<img src="" width="320" height="240" /> -->
-            <hr> <!--Horizontal Line-->
-            <!--Can try images proportions with "http://via.placeholder.com/widthxheight" -->
-        </div>
+            <section class="sec_register">
+                <p>Não tem uma conta? <a class="a_link" href="./bluebirdRegister.html">Crie uma conta</a></p>
+            </section>
+        </form>
     </body>
 
-    <footer>
-        
-        <div id="div_ContainerGithubIcon">
-            <img id="img_GithubIcon" src="./media/github-svgrepo-com.svg" alt="Imagem de Perfil do João">
-            <!-- <img id="img_ArrowPointingDown" src="./media/giphy-arrow-pointing-down.gif"> -->
-        </div>
-
-        <div id="div_ContainerGithubInformationWrapper">
-            <a href="https://github.com/JoaoAntunes7" target="_blank">
-                <div class="div_ContainerIcons" id="div_ContainerJohn">
-                    <img id="img_JohnsIcon" src="./media/joao-icon-1.jpg"> 
-                </div>
-            </a>
-
-            <a href="https://github.com/baronemarbles" target="_blank">
-                <div class="div_ContainerIcons" id="div_ContainerMarcio">
-                    <img id="img_MarciosIcon" src="./media/2.jpg" alt="Imagem de perfil do Marcio">
-                </div>
-            </a>
-        </div>
-        
-        <div id="span_ContainerContactMail"><a class="a_Mailto" id="a_MailtoJohn" href="mailto:jopemoan@gmail.com">jopemoan@gmail.com</a><a class="a_Mailto" id="a_MailtoMarcio" href="mailto:baronempbb@gmail.com">baronempbb@gmail.com</a></div>
-    </footer>
-    
 
 </html>
