@@ -5,6 +5,7 @@
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
+
 /*Navigation Bar*/
 #nav_navigationWrapper {
     display: flex;
@@ -12,16 +13,6 @@
     justify-content: space-around;
 }
 
-body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    background-image: url('../media/bluebird.jpg');
-    background-size: cover;
-    background-position: center;
-}
- 
 #div_navigationBar {
     border:2px solid yellow;
 }
@@ -34,6 +25,19 @@ body {
 #a_homeImage:hover {
     box-shadow: rgb(40, 11, 202);
 }
+
+
+/*Body Config*/
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url('../media/bluebird.jpg');
+    background-size: cover;
+    background-position: center;
+}
+ 
 
 /*Form login*/
 .form_loginWrapper {
@@ -113,9 +117,3 @@ body {
     margin-top: 15px;
 }
 
-/*Client-side validation*/
-/*#div_formWrapper {
-    align-content: center;
-    justify-items: center;
-    border: 2px solid blue;
-  }*/
