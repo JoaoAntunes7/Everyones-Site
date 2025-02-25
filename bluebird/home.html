@@ -1,96 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"> <!--Type of unicode used by all the websites(convert computer language to human)-->
+        <meta name="viewport" contet="width=devide-width, initial-scale=1"> <!--Width enable that the website can display properly in all devices(computers, tablets, phones) and initial scale set the zoom of the website-->
+        <link rel="stylesheet" href="../css/home.css">
+        <title>BlueBird - Home</title>
+    </head>
 
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family: Helvetica, sans-serif;
-    background-color: rgb(148, 147, 147);
-}
+    <header>
+        <nav id="nav_navigationWrapper">
+            <a href="./home.html"><img id="img_bluebirdLogo" src="../media/bluebirdLogo.jpg" alt="BlueBird Logo"></a>
+            <div id="div_searchbarWrapper">
+                <input type="text" placeholder="Pesquisar">
+            </div>
+            <a href="../home.html"><img id="img_home" src="../media/home.png" alt="Home Navigation Bar Image"></a>
+        </nav>
+    </header>
 
-header {
-    border: 2px solid yellow;
-}
+    <body>
+        <div id="div_mainWrapper">
+            <ul id="ul_verticalbarWrapper">
+                    <li><p>Rolls</p></li> 
+                    <li><p>Friends</p></li>
+                    <li><a href="./profile.html"><img id="img_profile" src="../media/user.png" alt="User Profile Image"></a></li>
+                    <li><button>Post</button></li>
+            </ul>
 
-body {
-    border: 2px solid purple; 
-   
-}
+            <div class="div_textbox">
+                <img id="img_profile" src="../media/user.png" alt="User Profile Image">
+                <textarea></textarea>
+            </div>
 
-#nav_navigationWrapper {
-    display: flex;
-    justify-content: space-between;
-    border: 2px solid white;
-}
-
-#div_searchbarWrapper {
-    border: 2px solid gray;
-    width: 420px;
-}
-
-#div_searchbarWrapper input {
-    width: 100%;
-    height: 100%;
-    border: none;
-    outline: none;
-    border-radius: 40px;
-    color: black;
-    background-color: white;
-    font-size: 16px;
-    padding: 10px;
-}
-
-#img_bluebirdLogo {
-    width: 50px;
-    height: 50px;
-    border-radius: 50px;
-}
-
-#img_bluebirdLogo:hover {
-    border: 2px solid rgb(66, 154, 226);
-    box-shadow: 0 0 10px rgb(198, 216, 231);
-}
-
-#img_home {
-    width: 50px;
-    height: 50px;
-    border-radius: 50px;
-}
-
-#div_mainWrapper {
-    border: 2px solid red;
-    display: flex;
-    flex-direction: row;
-}
-
-#ul_verticalbarWrapper {
-    border: 2px solid orange;
-    width: 70px;
-    height: 400px;
-    color:white;
-    list-style: none;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-}
-
-#ul_verticalbarWrapper li {
-    width: 100%;
-    padding: 10px 10px 10px 0;
-    border: 2px solid white; 
-    font-size: 16px;
-
-}
-
-#img_profile {
-    height: 50px;
-    width: 50px;
-    border-radius: 50px;
-}
-
-.div_textbox {
-    border: 2px solid aqua;
-    display: flex;
-    justify-self: center;
-    align-items: center;
-}
+        </div>
+    </body>
 
 
 
+</html>
