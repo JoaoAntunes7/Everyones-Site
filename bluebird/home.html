@@ -13,26 +13,43 @@
             <div id="div_searchbarWrapper">
                 <input type="text" placeholder="Pesquisar">
             </div>
-            <a href="../index.html"><img id="img_home" src="../media/home.png" alt="Home Navigation Bar Image"></a>
+            <a href="../home.html"><img id="img_home" src="../media/home.png" alt="Home Navigation Bar Image"></a>
         </nav>
     </header>
 
     <body>
         <div id="div_mainWrapper">
-            <ul id="ul_verticalbarWrapper">
-                    <li><p>Rolls</p></li> 
-                    <li><p>Friends</p></li>
-                    <li><a href="./profile.html"><img id="img_profile" src="../media/user.png" alt="User Profile Image"></a></li>
-                    <li><button>Post</button></li>
+            <ul class="ul_verticalbarWrapper"> <!--Vertical bar options-->
+                <li><a class="a_verticalbarLink a_verticalbarOnpage" href="./home.html"><img class="img_verticalbarImages" src="../media/bluebird-home-logo.png" alt="BlueBird Home Logo Image"> Home</a></li> 
+                <li><a class="a_verticalbarLink" href="./rolls.html"><img class="img_verticalbarImages" src="../media/cards-logo.png" alt="Rolls Logo Image"> Rolls</a></li> 
+                <li><a class="a_verticalbarLink" href="./friends.html"><img class="img_verticalbarImages" src="../media/friends.png" alt="Friends Logo Image"> Friends</a></li>
+                <li><a class="a_verticalbarLink" href="./profile.html"><img class="img_verticalbarImages" src="../media/user.png" alt="User Profile Image"> Profile</a></li>
+                <li><button>Post</button></li> <!--Pops up a textarea on the screen-->
+                <li><a class="a_verticalbarLink" href="./login.html"><img class="img_verticalbarImages img_notRounded" src="../media/log-out-logo.png" alt="User Profile Image"> Log out</a></li>
+                
             </ul>
 
-            <div class="div_textbox">
-                <img id="img_profile" src="../media/user.png" alt="User Profile Image">
-                <textarea></textarea>
-            </div>
+            <form class="form_textbox" action="" method="GET"> <!--Share a textbox in home page-->
+                <div id="div_textarea">
+                    <img class="img_textareaUserImage" src="../media/user.png" alt="User Profile Image">
+                    <textarea placeholder="Write something..."></textarea>
+                </div>  
+                <ul class="ul_horizontalbarWrapper">
+                    <button id="btn_imgUpload">
+                        <label for="input_imgUpload"><img class="img_textareaUserImage" src="../media/image-logo.png"></label>
+                        <input id="input_imgUpload" accept="image/jpeg,image/png,image/webp,image/gif,video/mp4,video/quicktime" multiple type="file">
+                    </button>
+                    <button>Enviar</button>
+                </ul>
+            </form>
 
+            <div class="div_rightColumn">
+                <p>right column</p>
+            </div>
         </div>
     </body>
+
+    
 
 
 
