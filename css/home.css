@@ -2,8 +2,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: Helvetica, sans-serif;
-    background-color: rgb(148, 147, 147);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 header {
@@ -12,7 +11,9 @@ header {
 
 body {
     border: 2px solid purple; 
-   
+    background-color: blueviolet; 
+    width: 1200px;
+    margin:auto;
 }
 
 #nav_navigationWrapper {
@@ -42,6 +43,7 @@ body {
     width: 50px;
     height: 50px;
     border-radius: 50px;
+    margin-left: 5px;
 }
 
 #img_bluebirdLogo:hover {
@@ -53,43 +55,139 @@ body {
     width: 50px;
     height: 50px;
     border-radius: 50px;
+    margin-right: 5px;
 }
 
 #div_mainWrapper {
     border: 2px solid red;
     display: flex;
-    flex-direction: row;
+    justify-content: space-between;
+    justify-items: center;
+    height: 852px;
 }
 
-#ul_verticalbarWrapper {
+/*Left Column (vertical bar options)*/
+.ul_verticalbarWrapper {
     border: 2px solid orange;
-    width: 70px;
+    width: fit-content;
     height: 400px;
     color:white;
     list-style: none;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
-#ul_verticalbarWrapper li {
+.ul_verticalbarWrapper li {
     width: 100%;
-    padding: 10px 10px 10px 0;
+    padding: 3px 0 3px 5px; /* 10px 0 10px 5px*/
     border: 2px solid white; 
-    font-size: 16px;
-
 }
 
-#img_profile {
+.ul_verticalbarWrapper li button {
+    width: 220px;
     height: 50px;
-    width: 50px;
+    border: none;
+    background-color: white;
+    border-radius: 30px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.a_verticalbarLink {
+    display: flex;
+    align-content: left;
+    height: 50px; /*30px*/
+    width: fit-content;
+    border-radius: 30px;
+    text-decoration: none;
+    color: white;
+    padding: 10px 17px 10px 10px; /*5px 7px 5px 5px*/
+    font-size: 25px; /*16px*/
+    letter-spacing: 0.5px;
+}
+
+.a_verticalbarLink:hover {
+    background: transparent;
+    background-color: rgb(182, 182, 182);
+}
+
+.a_verticalbarOnpage {
+    border: 2px dotted rgb(151, 59, 151);
+}
+
+.img_verticalbarImages {
+    height: 20px;
+    width: 20px;
+    border-radius: 50px;
+    margin: 3px 10px 0 0;
+}
+
+.img_notRounded {
+    border-radius: 0px !important;
+}
+
+
+/*Middle Column (textarea and posts)*/
+.form_textbox {
+    border: 2px solid aqua;
+    height: 100%;
+    width: 100%;
+}
+
+#div_textarea {
+    display: flex;
+    flex-direction: row;
+    padding-top: 10px;
+    border-bottom: 1px solid rgb(167, 164, 164);
+}
+
+#div_textarea textarea {
+    outline: none;
+    border: none;
+    width: 100%;
+    font-size: 20px;
+    padding-left: 10px;
+    background: transparent;
+    min-height: 100px;
+    resize: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.img_textareaUserImage {
+    height: 30px;
+    width: 30px;
     border-radius: 50px;
 }
 
-.div_textbox {
-    border: 2px solid aqua;
+.ul_horizontalbarWrapper {
+    border-bottom: 1px solid rgb(167, 164, 164);
+    height: fit-content;
+    width: 100%;
     display: flex;
-    justify-self: center;
-    align-items: center;
+    flex-direction: row;
 }
+
+#btn_imgUpload {
+    border: none;
+    cursor: pointer;
+}
+
+#input_imgUpload {
+    border:none;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+/*Right Column*/
+.div_rightColumn {
+  width: fit-content;
+  height: 400px;
+  border: 2px solid orange;
+}
+
+.div_rightColumn p {
+    width: 350px;
+}
+
 
 
 
