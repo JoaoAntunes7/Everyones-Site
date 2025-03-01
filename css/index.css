@@ -1,12 +1,12 @@
 :root{
-    --bg_black: #202020;
+  --bg_black: #202020;
 }
 
 *{
-    padding:0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family: Helvetica, sans-serif;
+  padding:0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Helvetica, sans-serif;
 }
 
 
@@ -14,102 +14,130 @@
 /*Footer config*/
 
 footer{
-    background-color: var(--bg_black);
-    align-content: center;
-    justify-items: center;
-    border: 2px solid blue; 
-
+  background-color: var(--bg_black);
+  align-content: center;
+  justify-items: center;
+  border: 2px solid blue; 
 }
 
 #div_ContainerGithubIcon{
 /*Coloquei 90px e flex para manter a posição do icone do github, mas que ainda alinhe com a seta, a seta não fica centralizada no meio, daí por isso*/
-    /* display: flex;
-    flex-direction: row; */
-    border: 2px solid yellow;
-    height: fit-content;
-    width: fit-content; 
-    margin-top: 10px;
-    margin-bottom: 10px;
+  /* display: flex;
+  flex-direction: row; */
+  border: 2px solid yellow;
+  height: fit-content;
+  width: fit-content; 
+  margin-top: 10px;
+  margin-bottom: 10px;
 
 }
 
 #img_GithubIcon{
-    height: 100%;
-    width: 100%;
-    max-height: 90px;
-    max-width: 90px;
+  height: 100%;
+  width: 100%;
+  max-height: 90px;
+  max-width: 90px;
 }
+
 
 /* Arrow Gif */
 #img_ArrowPointingDown{
-    height: 90px;
-    width: 90px;
+  height: 90px;
+  width: 90px;
 }
 
-
-.div_ContainerIcons{
-    height: 200px;
-    width: 200px;
-    border-radius: 100%;
-    transition: transform 1s;
-    border: 2px solid yellow;
-    overflow:hidden;
-    position: relative;
-}
-
-#div_ContainerMarcio:hover{
-    box-shadow: 0 0 30px rgba(52, 255, 238, 0.8);
-}
-
-.div_ContainerIcons:hover{
-    transform: translateY(-2px);
-    box-shadow: 0 0 30px rgba(173, 32, 255, 0.8);
-    cursor: pointer;
-}
-/* Ajusting image position */
-#img_JohnsIcon{
-    scale: 40%;
-    transform: translate(-119%,-115%);
-    position: absolute;
-    
-    
-}
-
-#img_MarciosIcon{
-    scale: 10%;
-    transform: translate(-460%,-475%);
-    position: absolute;
-}
 
 /* Spliting the icons */
 #div_ContainerGithubInformationWrapper{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    height: 200px;
-    width: 800px;
-    border: 2px solid purple;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  height: 200px;
+  width: 800px;
+  border: 2px solid purple;
+}
+
+.div_ContainerIcons{
+  height: 200px;
+  width: 200px;
+  border-radius: 100%;
+  transition: transform 1s;
+  border: 2px solid yellow;
+  overflow:hidden;
+  position: relative;
+}
+
+#div_ContainerMarcio:hover{
+  box-shadow: 0 0 30px rgba(52, 255, 238, 0.8);
+}
+
+.div_ContainerIcons:hover{
+  transform: translateY(-2px);
+  box-shadow: 0 0 30px rgba(173, 32, 255, 0.8);
+  cursor: pointer;
+}
+
+
+/* Ajusting image position */
+#img_JohnsIcon{
+  scale: 40%;
+  transform: translate(-119%,-115%);
+  position: absolute;
+}
+
+#img_MarciosIcon{
+  scale: 10%;
+  transform: translate(-460%,-475%);
+  position: absolute;
 }
 
 
 /* Spliting "'MailTo'"s and configurating 'a' atributte for this class*/
 #span_ContainerContactMail{
-    margin-top: 10px;
-    display: flex;
-    justify-content: space-around;
-    width: 800px;
-    border: 2px solid yellow;
-
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-around;
+  width: 800px;
+  border: 2px solid yellow;
 }
 
 .a_Mailto{
-    border: 2px solid green;
-    color: orange;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  border: 2px solid green;
+  color: orange;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .a_Mailto:hover{
-    color: rgb(62, 255, 55);
-    box-shadow: 0 0px 10px rgba(0,0,0,.4);
+  color: rgb(62, 255, 55);
+  box-shadow: 0 0px 10px rgba(0,0,0,.4);
 }
 
+
+/* Navigation Bar Config */
+#nav_navigationWrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  border:2px solid purple;
+}
+
+#div_navigationBar {
+  border:2px solid yellow;
+}
+
+.img_home {
+  height: 20px;
+  width: 20px;
+}
+
+#a_homeImage:hover {
+  box-shadow: rgb(40, 11, 202);
+}
+
+#a_bluebird {
+  color: rgb(12, 78, 177);
+}
+
+#a_bluebird:hover {
+  color: rgb(26, 147, 187);
+}

@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+/*Navigation Bar*/
+#nav_navigationWrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+#div_navigationBar {
+    border:2px solid yellow;
+}
+  
+.img_home {
+    height: 40px;
+    width: 40px;
+}
+  
+#a_homeImage:hover {
+    box-shadow: rgb(40, 11, 202);
+}
+
+
+/*Body Config*/
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url('../media/bluebird.jpg');
+    background-size: cover;
+    background-position: center;
+}
+ 
+
+/*Form login*/
+.form_loginWrapper {
+    width: 420px;
+    background: transparent;
+    backdrop-filter: blur(5px);
+    color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgb(165, 165, 165);
+    padding: 30px 40px;
+    border: 2px solid rgb(255, 255, 255, .2);
+}
+
+.form_loginWrapper h1 {
+    font-size: 30px;
+    text-align: center;
+    font-weight: 600;
+}
+
+.sec_input-box {
+    width: 100%;
+    height: 50px;
+    margin: 15px 0;
+}
+
+.sec_input-box input {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    outline: none;
+    border: 2px solid rgb(255, 255, 255, .2);
+    border-radius: 40px;
+    color: white;
+    font-size: 16px;
+    padding: 20px;
+}
+
+.sec_input-box input:hover{
+    box-shadow: 0 0 10px rgb(165, 165, 165);
+}
+
+.sec_input-box input::placeholder {
+    color: rgb(175, 175, 175);
+}
+
+.sec_remember-me {
+    display: flex;
+    justify-content: space-between;
+    font-size: 15px;
+    margin: 15px 0;
+}
+
+.a_link {
+    color: white;
+    text-decoration: none;
+    font: bold;
+}
+
+.a_link:hover {
+    text-decoration: underline;
+    color: rgb(105, 58, 235);
+    box-shadow: lightskyblue;
+}
+
+.sec_submitButton input {
+    width: 100%;
+    height: 50px;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    cursor: pointer;
+    font-size: 16px;
+    color: black;
+    font-weight: 400;
+}
+
+.sec_register {
+    font-size: 15px;
+    text-align: center;
+    margin-top: 15px;
+}
+
